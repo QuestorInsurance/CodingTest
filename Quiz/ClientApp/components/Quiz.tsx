@@ -8,9 +8,7 @@ export class Quiz extends React.Component<RouteComponentProps<{}>, any> {
     }
 
     public render() {
-
-        return <div>Display questions here
-        </div>;
+        return <div>Display questions here</div>;
     }
 }
 
