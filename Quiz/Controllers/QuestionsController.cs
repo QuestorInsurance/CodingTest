@@ -19,14 +19,14 @@ namespace QuestionServiceWebApi.Controllers
         {
         }
 
-        // GET api/question
+        // GET api/questions
         [HttpGet]
         public IList<QuestionDto> Get()
         {
             return _questionRepository.GetQuestions();
         }
 
-        // GET api/question/5
+        // GET api/questions/5
         [HttpGet]
         [Route("{id}")]
         public string Get(int id)
@@ -34,20 +34,20 @@ namespace QuestionServiceWebApi.Controllers
             return string.Empty;
         }
 
-        // POST api/question
+        // POST api/questions
         [HttpPost]
         public void Post([FromBody]string value)
         {
         }
 
-        // PUT api/question/5
+        // PUT api/questions/5
         [HttpPut]
         [Route("{id}")]
         public void Put(int id, [FromBody]string value)
         {
         }
 
-        // DELETE api/question/5
+        // DELETE api/questions/5
         [HttpDelete]
         [Route("{id}")]
         public void Delete(int id)
